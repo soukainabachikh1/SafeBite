@@ -6,7 +6,7 @@ pipeline{
             steps {
                 echo 'building the application'
                 nodejs('Node-18.16.0'){
-                    batch 'npm install'
+                    batch 'npm install -g expo-cli'
                 }                
             }
         }
