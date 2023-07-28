@@ -5,6 +5,9 @@ pipeline{
         stage("build"){
             steps {
                 echo 'building the application'
+                nodejs('Node-18.16.0'){
+                    batch 'npm install'
+                }                
             }
         }
 
